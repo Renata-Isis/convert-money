@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs')%>
+  <h1><a href="">ConvertMyMoney</a></h1>
+  <div class="result">
+    <% if(error){ %>
+      <%= error %>
+        <% }else{ %>
+          A cotação do dólar está em: <%= cotacao %>,
+            Portando <%= quantidade %> dolares
+              corresponde a <%= conversao %> reais.
+                <% } %>
+  </div>
+  <%- include('partials/footer.ejs')%>

@@ -1,0 +1,9 @@
+<%- include('partials/header.ejs')%>
+  <h1><a href="">ConvertMyMoney</a></h1>
+  <form method="GET" action="/cotacao">
+    <input type="text" name="cotacao" placeholder="Cotação do dolar"></br>
+    <input type="text" name="quantidade" placeholder="Quantidade de dolares">
+    </br>
+    <button>Converter!</button>
+  </form>
+  <%- include('partials/footer.ejs')%>
